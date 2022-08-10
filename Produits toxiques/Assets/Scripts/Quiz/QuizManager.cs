@@ -102,14 +102,14 @@ public class QuizManager : MonoBehaviour
     private void SetListCorrection(){
 
         correctionList.Add(SetCorrection(true, true, false));           //1
-        correctionList.Add(SetCorrection(false, false, true));          //2
+        correctionList.Add(SetCorrection(false, true, true));          //2
         correctionList.Add(SetCorrection(false, false, true));          //3
         correctionList.Add(SetCorrection(false, true, false));          //4
         correctionList.Add(SetCorrection(false, true, false));          //5
         correctionList.Add(SetCorrection(false, false, true));          //6
         correctionList.Add(SetCorrection(false, true, false));          //7
         correctionList.Add(SetCorrection(false, true, false));          //8
-        correctionList.Add(SetCorrection(true, false, true));           //9
+        correctionList.Add(SetCorrection(false, true, true));           //9
         correctionList.Add(SetCorrection(false, false, true));          //10
     }
 

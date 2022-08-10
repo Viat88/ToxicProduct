@@ -90,6 +90,7 @@ public class TutoManager : MonoBehaviour
             Activate(canva4, false);
             step = 0;
             EnableMenuItem(true);
+            mainCamera.transform.rotation = initialQuaternion;
         }
     }
 

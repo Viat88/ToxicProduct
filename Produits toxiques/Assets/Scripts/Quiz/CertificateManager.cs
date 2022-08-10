@@ -41,7 +41,7 @@ public class CertificateManager : MonoBehaviour
         SetDocName();
         SetDate();
 
-        System.IO.File.WriteAllText(docName, "<!DOCTYPE html>\n<html>\n<body>\n<img src=LogoSchneider.jpg>\n<p>Nom:" + surname + "</p>\n<p>Prenom:" + playerName + "</p>\n<p>Service:" + service + "</p>\n<p>Date:" + date + "</p>\n<p>Poste:" + poste + "</p>\n<p>A obtenu la note de " + score + "/10 au quiz sur les substances chimiques<p>\n</body>\n</html>");
+        System.IO.File.WriteAllText(docName, "<!DOCTYPE html>\n<html>\n<body>\n<img src=LogoSchneider.jpg>\n<p>Nom: " + surname + "</p>\n<p>Prenom: " + playerName + "</p>\n<p>Service: " + service + "</p>\n<p>Date: " + date + "</p>\n<p>Poste: " + poste + "</p>\n<p>A obtenu la note de " + score + "/10 au quiz sur les substances chimiques<p>\n</body>\n</html>");
     }
 
 ///////////////////////////////////////////////////////////////////////////////

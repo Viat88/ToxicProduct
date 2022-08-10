@@ -15,7 +15,7 @@ public class QuizManager : MonoBehaviour
     private List<List<bool>> correctionList = new List<List<bool>>();
 
 
-///////////////////////////////////////////////////////////////////////////////
+///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Awake() 
     {
@@ -57,6 +57,7 @@ public class QuizManager : MonoBehaviour
 
         if (IsCorrect()){
             points += 1;
+            CertificateManager.current.SetScore(points);
         }
 
         step += 1;

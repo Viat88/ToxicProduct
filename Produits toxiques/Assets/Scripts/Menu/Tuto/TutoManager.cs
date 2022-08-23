@@ -10,12 +10,9 @@ public class TutoManager : MonoBehaviour
 
     private Quaternion initialQuaternion;
     public Camera mainCamera;
-    public GameObject canva1;
-    public GameObject canva2;
-    public GameObject canva3;
-    public GameObject canva4;
+    public GameObject canva1, canva2, canva3, canva4, canva5, canva6;
     public List<GameObject> MenuItem;
-    public GameObject redGaz;
+    public GameObject redGaz, cannister;
     public List<GameObject> arrowsList;
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
@@ -76,8 +73,25 @@ public class TutoManager : MonoBehaviour
         }
 
         if (step == 6){
+            Activate(arrowsList[0], false);
             Activate(canva3, false);
+
             Activate(canva4, true);
+            EnableMeshCollider(cannister, true);
+            step+=1;
+        }
+
+        if (step == 8){
+            EnableMeshCollider(cannister, false);
+            Activate(canva4, false);
+
+            Activate(canva5, true);
+            step+=1;
+        }
+
+        if (step == 10){
+            Activate(canva5, false);
+            Activate(canva6, true);
 
             Activate(arrowsList[0], false);
             Activate(arrowsList[1], true);
@@ -85,13 +99,14 @@ public class TutoManager : MonoBehaviour
             step+=1;
         }
 
-        if (step == 8){
+        if (step == 12){
             Activate(arrowsList[1], false);
-            Activate(canva4, false);
+            Activate(canva6, false);
             step = 0;
             EnableMenuItem(true);
             mainCamera.transform.rotation = initialQuaternion;
         }
+
     }
 
 

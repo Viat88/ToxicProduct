@@ -31,6 +31,25 @@ public class HeadManager : MonoBehaviour
         }
     }
 
+    /*
+        Listener new sphere
+    */
+    public event Action<Transform> OnNewSphere;
+    public void NewSphere(Transform t){
+        OnNewSphere?.Invoke(t);
+    }
+
+    [SerializeField]
+    public Transform sphere;
+    public Transform Sphere{
+        get => sphere;
+        set
+        {
+            sphere = value;
+            NewSphere(sphere); //Fire the event
+        }
+    }
+
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Awake() 

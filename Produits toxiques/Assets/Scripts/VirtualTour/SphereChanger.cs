@@ -53,6 +53,8 @@ public class SphereChanger : MonoBehaviour {
     public void StartChangingSphere(Transform sphere){
         nextSphere = sphere;
 
+        HeadManager.current.Sphere = sphere;
+
         changeSphere = true;                                    // We have to change sphere 
         fadeInDone = false;                                     // We haven't done fade in
         cameraPositionChanged = false;                          // We haven't change camera position

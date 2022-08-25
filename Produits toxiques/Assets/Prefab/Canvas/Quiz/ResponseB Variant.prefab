@@ -25,27 +25,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.46869448
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0.56111246
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.39938894
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0.43888757
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844854, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741071693606844855, guid: 12f60e999675e1540a767e7b9e081865, type: 3}
       propertyPath: m_Name
-      value: ResponseB
+      value: ResponseB Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f60e999675e1540a767e7b9e081865, type: 3}

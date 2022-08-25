@@ -18173,6 +18173,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Menu Principal
       objectReference: {fileID: 0}
+    - target: {fileID: 1192064650459024664, guid: e3aa76d3cd4e75340969d51bcd55f1dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1547386475}
+    - target: {fileID: 1192064650459024664, guid: e3aa76d3cd4e75340969d51bcd55f1dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMouseDown
+      objectReference: {fileID: 0}
     - target: {fileID: 1192064650459024670, guid: e3aa76d3cd4e75340969d51bcd55f1dd, type: 3}
       propertyPath: m_Name
       value: MenuButton

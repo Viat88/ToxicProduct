@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class ErrorHereManager : MonoBehaviour
 {
-    public List<GameObject> errorSphereList;
-    private List<Vector3> errorSpherePositionList;
-    public GameObject canva;
+    
+    public List<GameObject> errorSphereList;                        // List of spheres containing an error
+    private List<Vector3> errorSpherePositionList;                  // List of position of spheres containing an error
+    public GameObject canva;                                        // Canva with message "error here"
 
 ///////////////////////// START FUNCTIONS ///////////////////////////////////
 
     void Start()
     {
-        SetPositionList();
+        SetPositionList();                                          // We initialise errorSpherePositionList
     }
 
     void Update()
     {
-        CheckSphere();
+        CheckSphere();                                              // We check if we are in a sphere containing an error
     }
 
 ///////////////////////////////////////////////////////////////////////////////
 
-    private void SetPositionList(){
+    /*
+        Initialise errorSpherePositionList by taking position of each sphere in errorSphereList
+    */
+    private void SetPositionList(){                                 
 
         errorSpherePositionList = new List<Vector3>();
 
@@ -31,7 +35,9 @@ public class ErrorHereManager : MonoBehaviour
         }
     }
 
-
+    /*
+        Show canva if we are in a sphere containing an error
+    */
     private void CheckSphere(){
         if (IsAnErrorSphere()){
             ShowCanva(true);
@@ -41,7 +47,11 @@ public class ErrorHereManager : MonoBehaviour
         }
     }
 
-
+    /*
+        Check if we are currently in an error sphere 
+        Output:
+         -bool: true if we are in an error sphere, no otherwise
+    */
     private bool IsAnErrorSphere(){
         return errorSpherePositionList.Contains(transform.position); 
     }

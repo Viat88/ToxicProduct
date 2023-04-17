@@ -5,6 +5,13 @@ using System.Globalization;
 
 public class CertificateManager : MonoBehaviour
 {
+
+    /*
+        This class creates a certificat when the user has finished the quiz.
+        It's obligatory to let a picture called "LogoSchneider" in the same folder where the build is, 
+        because their is a html code that will get this picture (searching it by its name) and that will put it on the certificate
+         
+    */
     public static CertificateManager current;
 
     private string surname = "Unknown";
